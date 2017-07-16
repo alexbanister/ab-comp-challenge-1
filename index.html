@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="lib/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,400,900" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -11,16 +10,16 @@
   </head>
   <body>
     <nav>
-      <article class="header">
+      <header class="header">
         <div class="header-content">
-          <h1>Get lost with me</h1>
+          <!-- <h1>Get Lost With Me</h1>
           <p>
-            Long island iced tea scelerisque mudslide odio bombay nisi nam porta eget gin fizz. Oban consequat volutpat old bushmill's non whiskey sour, metaxa elit porta fringilla.
+            Long island iced tea odio bombay nisi nam porta eget gin fizz. Oban old bushmill's non whiskey sour.
           </p>
           <span><img src="images/contact.svg" alt="">Contact Me</span>
-          <span><img src="images/dont.svg" alt="">Don't Click Here!</span>
+          <span id="dont-click-here"><img src="images/dont.svg" alt="">Don't Click Here!</span> -->
         </div>
-      </article>
+      </header>
       <article class="me">
         <div class="nav-links">
           <img src="images/me.svg" alt="">
@@ -42,7 +41,7 @@
       <article class="story">
         <div class="nav-links">
           <img src="images/story.svg" alt="">
-          <h2>story</h2>
+          <h2>stories</h2>
         </div>
       </article>
       <article class="social">
@@ -68,15 +67,20 @@
 
     <main>
       <div class="carousel-dots">
-        <img src="" alt="">
+        <img src="images/photo-dot.svg" alt="" class="off">
+        <img src="images/photo-dot.svg" alt="" class="on">
+        <img src="images/photo-dot.svg" alt="" class="off">
       </div>
-      <span class="carousel-left">
-        <img src="" alt="">
-      </span>
-      <span class="carousel-left">
-        <img src="" alt="">
-      </span>
+      <div class="carousel">
+        <span>
+          <img src="images/photo-arrow.svg" alt="">
+        </span>
+        <span class="carousel-right">
+          <img src="images/photo-arrow.svg" alt="">
+        </span>
+      </div>
     </main>
+
   <script type="text/javascript" src="javascript.js"></script>
   </body>
   </script>

@@ -7,6 +7,7 @@ body {
   font-family: 'Work Sans', sans-serif;
   font-weight: 100;
   color: #f2edc9;
+  background-color: #223344;
 }
 
 nav {
@@ -22,6 +23,12 @@ article {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  text-shadow: 0 0 .2em #666666;
+}
+article:hover {
+  box-shadow: inset 0 0 4em 0 rgba(242,237,201,.5);
+  text-shadow: 0 0 .5em #666666;
+  cursor: pointer;
 }
 article img {
   width: 5em;
@@ -29,82 +36,185 @@ article img {
 main {
   width: 40%;
   height: 100vh;
-  display: flex;
-  background-image: url('images/cappadocia.jpg');
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+  /*flex-direction: row;*/
+  background-image: url('images/kure-beach.jpg');
   background-size: cover;
-  background-position: right;
+  background-position: center;
   background-repeat: no-repeat;
 }
+
 h1 {
+  font-size: 2em;
+  font-weight: bolder;
   display: block;
+  font-variant: small-caps;
 }
 h2 {
-  width: 100%;
   text-align: center;
   margin: 0;
   padding: 0;
   font-weight: lighter;
   text-transform: uppercase;
   font-size: 1.8em;
-  margin-top: -1.25em;
-  text-shadow: 1px 1px 5px #666666;
+  margin-top: -1em;
 }
 p {
-  margin: 1em 0;
+  margin: .9em 0;
 }
-.header {
+header {
   width: 40vw;
-  background-color: #50525d;
+  display: flex;
+  align-items: flex-end;
+  background-color: #223344;
+  background: radial-gradient(ellipse at center, #264056 0%, #223344 100%);
 }
 
 .header-content {
-  /*width: 100%;*/
+  /*width: 90%;*/
   /*height: 8em;*/
-  padding: 1.5em;
-  display: flex;
-  flex-wrap: wrap;
+  /*padding: 1.5em;*/
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+  margin: 2em;
+  /*margin-top: -4em;*/
 }
 .header-content img {
   width: 1em;
-  /*padding: .8em .2em;*/
   padding-right: .3em;
 }
 .header-content span {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  display: inline-block;
   border: 1px solid #f2edc9;
-  /*width: 10em;*/
   margin-right: .5em;
   padding: .6em;
 }
+.header-content span:hover {
+  box-shadow: inset 0 0 1em 0 rgba(242,237,201,.5);
+  cursor: pointer;
+}
+
 .nav-links {
   text-align: center;
 }
+
 .me {
-  background-color: #db9c94;
+  background-color: #9999bb;
+  background: radial-gradient(ellipse at center, #9999bb 0%, #ccccff 100%);
 }
 
 .places {
-  background-color: #8a7e92;
-}
-
-.story {
-  background-color: #447777;
+  background-color: #bbbb88;
+  background: radial-gradient(ellipse at center, #d1cf84 0%, #bbbb88 100%);
 }
 
 .photos {
-  background-color: #bb9999;
+  background-color: #aa8899;
+  background: radial-gradient(ellipse at center, #bc7a9f 0%, #aa8899 100%);
+}
+
+.story {
+  background-color: #5577aa;
+  background: radial-gradient(ellipse at center, #5577aa 0%, #4477c1 100%);
 }
 
 .social {
-  background-color: #6677aa;
+  background-color: #ffbb77;
+  background: radial-gradient(ellipse at center, #ef9e56 0%, #ffbb77 100%);
 }
 
 .plans {
-  background-color: #eeaabb;
+  background-color: #779977;
+  background: radial-gradient(ellipse at center, #779977 0%, #79af79 100%);
 }
 
 .tips {
-  background-color: #775566;
+  background-color: #fccfbc;
+  background: radial-gradient(ellipse at center, #efad97 0%, #fccfbc 100%);
+}
+
+.carousel-dots {
+  display: block;
+  text-align: right;
+  padding: .5em;
+  padding-right: .8em;
+}
+.carousel-dots .off {
+  width: .5em;
+  opacity: .5;
+}
+.carousel-dots .on {
+  opacity: 1;
+  width: .6em;
+}
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90%;
+  /*flex-wrap: wrap;*/
+}
+.carousel span {
+  width: 40%;
+  height: 100%;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  opacity: .5;
+}
+
+.carousel span:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.carousel-right {
+  text-align: right;
+  transform: rotate(180deg);
+}
+.carousel img {
+  width: 2em;
+}
+@media (max-width: 1600px) {
+  body {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 1375px) {
+  body {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 1100px) {
+  body {
+    font-size: 1.0em;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    font-size: .8em;
+  }
+}
+
+@media (max-width: 750px) {
+  body {
+    font-size: .8em;
+    flex-direction: column-reverse;
+  }
+  main {
+    width: 100%;
+    height: 40vh;
+  }
+  nav {
+    width: 100%;
+  }
+  article {
+    width: 50%;
+  }
+  .header {
+    width: 100%;
+  }
 }
