@@ -10,3 +10,7 @@ This challenge was to match the structure of the provided comp and build a fully
 
 ### My Comp
 ![alt text](https://github.com/alexbanister/ab-comp-challenge-1/blob/master/images/ab-comp-challenge-1.png "Static Comp 1")
+
+![alt text](https://github.com/alexbanister/ab-comp-challenge-1/blob/master/images/small-screen-shot.png "Static Comp 1 Small screen")
+
+![alt text](https://github.com/alexbanister/ab-comp-challenge-1/blob/master/images/smallest-screen-shot.png "Static Comp 1 Smallest screen")
